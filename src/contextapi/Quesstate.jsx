@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import quescon from './QuesContext';
 // import Cookies from 'universal-cookie';
 export default function Quesstate(props) {
-    const host = "http://localhost:5000"
+    // const host = "http://localhost:5000"
+    const host="https://backend-ai-theta.vercel.app"
 
 
     const[user,setuser]=useState({})
