@@ -21,7 +21,8 @@ export default function Signup({ visible, onClose }) {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ "email": login.email, "password": login.password })
+            body: JSON.stringify({ "email": login.email, "password": login.password }),
+            'mode':'no-cors'
         });
         const json = await response.json();
         // console.log(json)
@@ -46,7 +47,8 @@ export default function Signup({ visible, onClose }) {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ "name": login.name, "email": login.email, "password": login.password })
+            body: JSON.stringify({ "name": login.name, "email": login.email, "password": login.password }),
+            'mode':'no-cors'
         });
         const json = await response.json();
         // console.log(json)
