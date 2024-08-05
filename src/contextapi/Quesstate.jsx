@@ -71,7 +71,7 @@ export default function Quesstate(props) {
         });
         var json = await response.json();
        
-        setuser(json);
+        setuser(json.result);
         // console.log(json);
 
 
